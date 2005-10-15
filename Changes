@@ -1,0 +1,33 @@
+Revision history for Perl extension Crypt::OpenSSL::DSA.
+
+0.13  October 15, 2005
+	- made t/90-openssl-compat.t windows compatible (Rob)
+
+0.12  May 22, 2005
+	- Removed all use of strlen() in DSA.xs so signatures with nulls,
+          as commonly generated with sha1, could be signed/verified,
+          and added more tests
+          (Brad Fitzpatrick <brad@danga.com>)
+
+0.11  Jan 6th, 2003
+	- Added -DPERL5 to Makefile.PL required for perl-5.8/gcc-3.2
+
+0.10  Sep 25th, 2002
+        - Fixed Memory leak with signature object.
+	- Added set_p, set_q, set_g, set_pub_key, set_priv_key (Olaf Kolkman)
+        - Added set_r and set_s methods to Crypt::OpenSSL::DSA::Signature
+	- Renamed Signature.pm to Signature.pod
+
+0.04  Sep 24th, 2002
+	- Fixed bug in verify method
+        - Added read_priv_key_str and read_pub_key_str
+
+0.03  Feb 6th, 2002
+	- Added Crypt::OpenSSL::DSA::Signature interface
+
+0.02  Sep 24th, 2001
+	- Added more docs
+	- seed is now optional argument in generate_parameters
+
+0.01  Sep 18th, 2001
+	- original version; created by h2xs
