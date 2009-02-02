@@ -1,0 +1,19 @@
+Source: libcrypt-openssl-dsa-perl
+Section: perl
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>
+Build-Depends: debhelper (>= 6), libssl-dev, libdigest-sha1-perl, openssl, quilt
+Standards-Version: 3.8.0
+Homepage: http://perl-openssl.sourceforge.net/
+Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libcrypt-openssl-dsa-perl/
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libcrypt-openssl-dsa-perl/
+
+Package: libcrypt-openssl-dsa-perl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}
+Description: module which implements the DSA signature verification system
+ Crypt::OpenSSL::DSA is a wrapper to the DSA (Digital Signature Algorithm)
+ functions contained in the OpenSSL crypto library. It allows you to create
+ public/private key pair, sign messages and verify signatures, as well as
+ manipulate the keys at the low level.

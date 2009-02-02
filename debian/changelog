@@ -1,0 +1,54 @@
+libcrypt-openssl-dsa-perl (0.13-4) unstable; urgency=medium
+
+  * Medium urgency for fixing a security-related bug.
+
+  [ gregor herrmann ]
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+
+  [ Damyan Ivanov ]
+  * add security_croak-in-do_verify-too.patch making do_verify() croak on
+    error the same way verify() already does. Document that verify() and
+    do_verify() croak on errors.
+    Closes: #511519. Thanks to Kurt Roeckx
+  * add description to Makefile.PL--no-ssl-in-LIBS.patch
+  * add fix-manpage-errors.patch fixing missing =over/-back around =item's in
+    Crypt::OpenSSL::DSA::Signature's POD.
+  * Extend the long description a bit
+  * Standards-Version: 3.8.0 (no changes)
+
+ -- Damyan Ivanov <dmn@debian.org>  Mon, 02 Feb 2009 12:02:51 +0200
+
+libcrypt-openssl-dsa-perl (0.13-3) unstable; urgency=low
+
+  * add ${perl:Depends} to Depends. Thanks, Niko.
+
+ -- Damyan Ivanov <dmn@debian.org>  Sun, 27 Jan 2008 22:08:29 +0200
+
+libcrypt-openssl-dsa-perl (0.13-2) unstable; urgency=low
+
+  * Taking over to Debian Perl Group on maintainer's request
+
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * Maintainer set to Debian Perl Group;
+  * added debian/watch
+  * Standards-Version: 3.7.3 (no changes)
+  * debhelper compatibility level 6
+  * add myself to Uploaders
+  * debian/rules: sync with current dh-make-perl templates
+  * debian/copyright: update years of copyright; use dist-based upstream URL
+  * add libdigest-sha1-perl and openssl to Build-Depends. Needed by the test
+    suite
+  * Remove -lssl from Makefile.PL's LIBS. Add quilt support
+
+ -- Damyan Ivanov <dmn@debian.org>  Sun, 27 Jan 2008 20:56:51 +0200
+
+libcrypt-openssl-dsa-perl (0.13-1) unstable; urgency=low
+
+  * Initial release (Closes: #362953).
+
+ -- Luk Claes <luk@debian.org>  Mon, 15 May 2006 04:40:52 +0200
+
