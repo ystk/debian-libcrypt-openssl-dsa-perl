@@ -2,12 +2,13 @@ Source: libcrypt-openssl-dsa-perl
 Section: perl
 Priority: optional
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
-Uploaders: Damyan Ivanov <dmn@debian.org>
-Build-Depends: debhelper (>= 6), libssl-dev, libdigest-sha1-perl, openssl, quilt
-Standards-Version: 3.8.0
+Uploaders: Damyan Ivanov <dmn@debian.org>,
+ Dominic Hargreaves <dom@earth.li>
+Build-Depends: debhelper (>= 9.20120312), libssl-dev, openssl
+Standards-Version: 3.9.3
 Homepage: http://perl-openssl.sourceforge.net/
-Vcs-Svn: svn://svn.debian.org/pkg-perl/trunk/libcrypt-openssl-dsa-perl/
-Vcs-Browser: http://svn.debian.org/viewsvn/pkg-perl/trunk/libcrypt-openssl-dsa-perl/
+Vcs-Git: git://git.debian.org/pkg-perl/packages/libcrypt-openssl-dsa-perl.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libcrypt-openssl-dsa-perl.git
 
 Package: libcrypt-openssl-dsa-perl
 Architecture: any

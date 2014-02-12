@@ -1,3 +1,48 @@
+libcrypt-openssl-dsa-perl (0.13-6) unstable; urgency=low
+
+  * Bump debhelper compat level to 9
+  * Apply patch from Niko Tyni fixing FTBFS with -Werror=format-security
+    (Closes: #661382)
+  * Update Standards-Version (no changes)
+
+ -- Dominic Hargreaves <dom@earth.li>  Sun, 01 Apr 2012 16:12:23 +0100
+
+libcrypt-openssl-dsa-perl (0.13-5) unstable; urgency=low
+
+  * Team upload.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/patches:
+    - Add DEP3 patch headers to Makefile.PL-no-ssl-in-LIBS.patch
+    - Add DEP3 patch header to fix-manpage-errors.patch
+    - Add DEP3 patch header to security_croak-in-do_verify-too.patch
+    - Add use-Digest-SHA.patch patch: Substitute use of Digest::SHA1 with
+      Digest::SHA, which is in perl core since 5.9.3.
+  * Remove debian/README.source file.
+  * debian/control:
+    - Remove Build-Depends on quilt.
+    - Update Build-Depends on debhelper to (>= 8).
+    - Remove Build-Depends on libdigest-sha1-perl.
+  * debian/rules: Simplify to a tiny debian/rules makefile. Drop quilt
+    framework
+  * Convert to '3.0 (quilt)' source package format.
+  * Bump Debhelper compat level to 8.
+  * debian/copyright:
+    - Update debian/copyright to revision 135  of format-specification in DEP5
+      for machine readable copyright files.
+    - Refer to Debian systems in general instead of only Debian GNU/Linux
+      systems.
+    - Explicitly point to GPL-1 license text in common-licenses.
+  * Bump Standards-Version to 3.9.2.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 05 Aug 2011 22:16:19 +0200
+
 libcrypt-openssl-dsa-perl (0.13-4) unstable; urgency=medium
 
   * Medium urgency for fixing a security-related bug.
