@@ -1,5 +1,10 @@
 Revision history for Perl extension Crypt::OpenSSL::DSA.
 
+0.14  October 16, 2012
+	- compiling with -Werror=format-security now works (Jerome Quelin, #48446)
+	- Use Digest::SHA instead of Digest::SHA1 (Ansgar Burchardt, #60271)
+	- Security fix, CVE-2009-0129: Missing error check in do_verify (Havard Eidnes, #79958)
+
 0.13  October 15, 2005
 	- made t/90-openssl-compat.t windows compatible (Rob)
 

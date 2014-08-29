@@ -54,7 +54,7 @@ generate_parameters(CLASS, bits, seed = NULL)
         }
         dsa = DSA_generate_parameters(bits, seedpv, seed_len, NULL, NULL, NULL, NULL);
         if (!dsa)
-          croak(ERR_reason_error_string(ERR_get_error()));
+          croak("%s", ERR_reason_error_string(ERR_get_error()));
         RETVAL = dsa;
     OUTPUT:
         RETVAL
@@ -139,6 +139,8 @@ do_verify(dsa, dgst, sig)
     CODE:
         dgst_pv = SvPV(dgst, dgst_len);
         RETVAL = DSA_do_verify(dgst_pv, dgst_len, sig, dsa);
+	if (RETVAL == -1)
+	  croak("Error in DSA_do_verify: %s",ERR_error_string(ERR_get_error(), NULL));
     OUTPUT:
         RETVAL
 
