@@ -7,7 +7,7 @@ require DynaLoader;
 
 use vars qw(@ISA $VERSION);
 @ISA = qw(DynaLoader);
-$VERSION = '0.13';
+$VERSION = '0.14';
 
 bootstrap Crypt::OpenSSL::DSA $VERSION;
 
@@ -124,9 +124,13 @@ Verifies that the $sig signature for $message is valid.
 
 $dsa is the signer's public key.
 
+Note: it croaks if the underlying library call returns error (-1).
+
 =item $valid = $dsa->do_verify( $message, $sig_obj );
 
 Similar to C<verify>, but uses a L<Crypt::OpenSSL::DSA::Signature> object.
+
+Note: it croaks if the underlying library call returns error (-1).
 
 =item $dsa->write_params( $filename );
 

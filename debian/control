@@ -5,9 +5,9 @@ Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Uploaders: Damyan Ivanov <dmn@debian.org>,
  Dominic Hargreaves <dom@earth.li>
 Build-Depends: debhelper (>= 9.20120312), libssl-dev, openssl
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: http://perl-openssl.sourceforge.net/
-Vcs-Git: git://git.debian.org/pkg-perl/packages/libcrypt-openssl-dsa-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libcrypt-openssl-dsa-perl.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libcrypt-openssl-dsa-perl.git
 
 Package: libcrypt-openssl-dsa-perl

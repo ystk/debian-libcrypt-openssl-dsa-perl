@@ -1,6 +1,6 @@
 Description: fix errors in POD. Mainly just missing =over/=back.
 Origin: vendor
-Bug: https://sourceforge.net/tracker2/?func=detail&aid=2556457&group_id=73194&atid=53705
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=80369
 Forwarded: yes
 Author: Damyan Ivanov <dmn@debian.org>
 Last-Update: 2011-08-05

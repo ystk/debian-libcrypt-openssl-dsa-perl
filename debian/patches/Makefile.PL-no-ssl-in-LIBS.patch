@@ -1,7 +1,7 @@
-Description: remove -lssl from LIBS as it is not needed; no symbols from                                                                                                            
- libssl are used.
+Description: remove -lssl from LIBS as it is not needed
+ no symbols from libssl are used.
 Origin: vendor
-Bug: https://sourceforge.net/tracker2/?func=detail&aid=2556362&group_id=73194&atid=537056
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=80368
 Forwarded: yes
 Author: Damyan Ivanov <dmn@debian.org>
 Last-Update: 2011-08-05

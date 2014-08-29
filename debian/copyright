@@ -1,7 +1,7 @@
-Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?view=markup&pathrev=135
-Maintainer: T.J. Mather <tjmather@maxmind.com>
-Source: http://search.cpan.org/dist/Crypt-OpenSSL-DSA/
-Name: Crypt-OpenSSL-DSA
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Crypt-OpenSSL-DSA
+Upstream-Contact: T.J. Mather <tjmather@maxmind.com>
+Source: https://metacpan.org/release/Crypt-OpenSSL-DSA
 
 Files: *
 Copyright: 2002, T.J. Mather.
@@ -10,7 +10,7 @@ License: Artistic or GPL-1+
 Files: debian/*
 Copyright: 2006, Luk Claes <luk@debian.org>
  2008, 2009, Damyan Ivanov <dmn@debian.org>
- 2011, Salvatore Bonaccorso <carnil@debian.org>
+ 2011-2012 Salvatore Bonaccorso <carnil@debian.org>
 License: Artistic or GPL-1+
 
 License: Artistic
